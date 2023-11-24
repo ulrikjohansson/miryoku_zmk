@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Ulrik corne nice_nano_v2 nice_view'
+name: '0. Ulrik corne nice_nano_v2 nice_view'
 on: [workflow_dispatch, pull_request]
 jobs:
   build:
@@ -11,4 +11,4 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["corne_left nice_view_adapter nice_view","corne_right nice_view_adapter nice_view"]'
       alphas: '["qwerty"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
